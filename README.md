@@ -36,3 +36,116 @@ touch nomedoaquivo.txt
 ```
 mkdir nomedodiretorio
 ```
+
+
+## GIT:
+
+1. Seguinte comando pode ser usado para definir o email:
+```
+git config --global user.email "samueloficial@protonmail.com"
+```
+
+
+2. Seguinte comando pode ser usado para definir o Nome:
+```
+git config --global user.name "SamuelBarbosaDev"
+```
+
+
+3. Clona o repositorio:
+```
+git clone https://github.com/SamuelBarbosaDev/My_Site.git
+```
+
+
+4. Diz qual é o status do repositorio
+```
+git status
+```
+
+
+5. Adiciona o arquivo ao índice:
+```
+git add nomedoarquivo.extenção
+```
+
+
+6. O comando git commit é usado para confirmar as alterações na cabeça:
+```
+git commit –m “coloque sua mensagem aqui”
+```
+
+
+7. Envia as alterações feitas para o ramo mestre do repositório remoto:
+```
+git push
+```
+
+
+9. nome configurado:
+opções:
+--local
+--global
+--system
+
+```
+git config --local user.name "SeuUserName"
+```
+
+
+10. E-mail configurando:
+opções:
+--local
+--global
+--system
+
+```
+git config --local user.email "samueloficial@protonmail.com"
+```
+
+
+11. salva usuario e senha por 8 horas:
+opções:
+--local
+--global
+--system
+
+```
+git config --local credential.helper 'cache --timeout=28800'
+```
+
+
+12. salva usuario e senha permanente:
+opções:
+--local
+--global
+--system
+
+```
+git config --local credential.helper cache
+```
+
+13. echo "# Meu-Portfolio" >> README.md
+```
+git init
+```
+
+```
+git add README.md
+```
+
+```
+git commit -m "first commit"
+```
+
+```
+git branch -M main
+```
+
+```
+git remote add origin https://github.com/SamuelBarbosaDev/Meu-Portfolio.git
+```
+
+```
+git push -u origin main
+```
