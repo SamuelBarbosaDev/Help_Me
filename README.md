@@ -190,3 +190,15 @@ Mapear BD existente para o projeto Django.
 ```
 python manage.py inspectdb > nome_da_app.models.py
 ```
+## Python:
+
+adicionando todas as Libs ao arquivo requeriments.txt:
+```
+pip freeze > requeriments.txt
+```
+
+adiciona libs especificas ao arquivo requeriments.txt:
+```
+pip freeze | grep jwt
+```
+
