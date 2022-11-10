@@ -194,11 +194,11 @@ python manage.py inspectdb > nome_da_app.models.py
 
 adicionando todas as Libs ao arquivo requeriments.txt:
 ```
-pip freeze > requeriments.txt
+pip freeze > requirements.txt
 ```
 
 adiciona libs especificas ao arquivo requeriments.txt:
 ```
-pip freeze | grep jwt
+pip freeze | grep jwt >> requirements.txt 
 ```
 
