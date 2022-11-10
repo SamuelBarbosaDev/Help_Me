@@ -149,3 +149,44 @@ git remote add origin https://github.com/SamuelBarbosaDev/Meu-Portfolio.git
 ```
 git push -u origin main
 ```
+## Django:
+
+Criar Projeto.
+```
+django-admin startproject nome_do_projeto
+```
+
+Criar Aplicação.
+```
+python manage.py startapp nome_da_app
+```
+
+Criar Migrações.
+```
+python mananage.py makemigrations
+```
+
+Executar Migrações.
+```
+python manage.py migrate
+```
+
+Executar Servidor de Desenvolvimento.
+```
+python manage.py runserver
+```
+
+Limpar Banco de Dados.
+```
+python manage.py flush
+```
+
+Abrir Shell do Banco de Dados Configurado.
+```
+python manage.py dbshell
+```
+
+Mapear BD existente para o projeto Django.
+```
+python manage.py inspectdb > nome_da_app.models.py
+```
