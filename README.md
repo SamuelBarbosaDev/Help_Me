@@ -202,3 +202,34 @@ adiciona libs especificas ao arquivo requeriments.txt:
 pip freeze | grep jwt >> requirements.txt 
 ```
 
+## PostgreSQL:
+
+Como acessar o prompt de comando do PostgreSQL:
+```
+sudo -u postgres psql postgres
+```
+
+Para sair do prompt de comando do PostgreSQL:
+```
+\q 
+```
+
+Como encontrar as informações sobre o banco de dados:
+```
+select version();
+```
+
+Lista dos bancos de dados no cluster:
+```
+\l+
+```
+
+Lista de usuários no cluster:
+```
+\du+
+```
+
+Lista de tablespaces customizados no cluster:
+```
+\db+
+```
