@@ -248,3 +248,13 @@ Criando um banco de dados:
 ```
 sudo -u postgres createdb -O nomedousuario nomedobancodedados
 ```
+
+Excluí o banco de dados:
+```
+DROP DATABASE databasename; 
+```
+
+Excluí o usuário:
+```
+DROP USER nomedousuario;
+```
