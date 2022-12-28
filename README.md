@@ -258,3 +258,8 @@ Excluí o usuário:
 ```
 DROP USER nomedousuario;
 ```
+
+Conectando ao banco de dados:
+```
+\connect nomedobancodedados
+```
