@@ -243,6 +243,11 @@ Mais informações sobre o createuser do PostgreSQL:
 ```
 createuser --help
 ```
+
+Criando um banco de dados:
+```
+sudo -u postgres createdb -O nomedousuario nomedobancodedados
+```
 Output:
 ==========================================================================================================
 createuser cria uma nova role do PostgreSQL.
