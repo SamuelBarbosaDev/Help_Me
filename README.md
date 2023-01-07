@@ -192,6 +192,16 @@ python manage.py inspectdb > nome_da_app.models.py
 ```
 ## Python:
 
+Criando ambiente virtual
+```
+python3 -m venv venv
+```
+
+Ativando ambiente virtual:
+```
+source venv/bin/activate
+```
+
 adicionando todas as Libs ao arquivo requeriments.txt:
 ```
 pip freeze > requirements.txt
