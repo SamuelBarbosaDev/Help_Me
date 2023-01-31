@@ -37,6 +37,10 @@ touch nomedoaquivo.txt
 mkdir nomedodiretorio
 ```
 
+7. Verifica atualizações de todos os pacotes de um sistema Linux:
+```
+sudo apt-get upgrade
+```
 
 ## GIT:
 
@@ -210,6 +214,16 @@ pip freeze > requirements.txt
 adiciona libs especificas ao arquivo requeriments.txt:
 ```
 pip freeze | grep jwt >> requirements.txt 
+```
+
+Atualizando um pacote:
+```
+pip install --upgrade <package-name>
+```
+
+Removendo Varios pacotes:
+```
+pip uninstall -r requirementstmp.txt -y
 ```
 
 ## PostgreSQL:
