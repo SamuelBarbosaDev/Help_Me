@@ -3,36 +3,36 @@ __Do you need help?__
 
 ## UBUNTU:
 
-1. Lista dos programas instalados atualmente.
+1. Lista dos programas instalados atualmente:
 ```
 dpkg --list
 ```
 
 
-2. Desinstalar Softwares no Ubuntu.
+2. Desinstalar Softwares no Ubuntu:
 ```
 sudo apt-get --purge remove nomedoprograma
 ```
 
 
-3. Lista os diretorios ocultos.
+3. Lista os diretorios ocultos:
 ```
 ls -a
 ```
 
 
-4. Interragi com os diretorios.
+4. Interragi com os diretorios:
 ```
 cd nomedodiretorio
 ```
 
 
-5. Criar um arquivo
+5. Criar um arquivo:
 ```
 touch nomedoaquivo.txt
 ```
 
-6. Crie um diretorios.
+6. Crie um diretorios:
 ```
 mkdir nomedodiretorio
 ```
@@ -40,6 +40,11 @@ mkdir nomedodiretorio
 7. Verifica atualizações de todos os pacotes de um sistema Linux:
 ```
 sudo apt-get upgrade
+```
+
+8. O comando pwd informa o diretório absoluto corrente:
+```
+pwd
 ```
 
 ## GIT:
