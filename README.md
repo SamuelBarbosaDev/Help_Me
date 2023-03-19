@@ -47,6 +47,11 @@ sudo apt-get upgrade
 pwd
 ```
 
+9. Entra na pasta:
+```
+nautilus nome_da_pasta
+```
+
 ## GIT:
 
 1. Seguinte comando pode ser usado para definir o email:
