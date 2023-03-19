@@ -52,6 +52,11 @@ pwd
 nautilus nome_da_pasta
 ```
 
+10. Intalando atualizações dos seus apps:
+```
+sudo dpkg -i nome_do_arquivo.deb
+```
+
 ## GIT:
 
 1. Seguinte comando pode ser usado para definir o email:
