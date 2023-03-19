@@ -297,3 +297,25 @@ Conectando ao banco de dados:
 ```
 \connect nomedobancodedados
 ```
+
+## Docker Compose:
+
+Iniciando o Docker:
+```
+sudo docker-compose up
+```
+
+Iniciando o Docker em segundo plano:
+```
+sudo docker-compose up -d
+```
+
+Parando o Docker:
+```
+sudo docker stop o_nome_do_docker
+```
+
+Verificando os Docker ativos: 
+```
+sudo docker ps
+```
