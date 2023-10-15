@@ -367,6 +367,11 @@ Criando imagem personalizada:
 docker build -t NOME_DA_IMAGEM CAMINHO_DO_DOCKERFILE
 ```
 
+Criando um volume, exemplo:
+```shell
+docker run -d --name db -e POSTGRES_PASSWORD=postgres -v db_volume:/var/lib/postgresql/data -p 5433:5432 postgres
+```
+
 ## Docker Compose:
 Cria e inicia os contêineres:
 ```shell
