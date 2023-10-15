@@ -1,326 +1,414 @@
 # Help Me
 __Do you need help?__
 
-## UBUNTU:
+### Indice:
+- [Help Me](#help-me)
+    - [Indice:](#indice)
+  - [Ubuntu:](#ubuntu)
+  - [Git:](#git)
+  - [Django:](#django)
+  - [Python:](#python)
+  - [PostgreSQL:](#postgresql)
+  - [Docker:](#docker)
+  - [Docker Compose:](#docker-compose)
 
-1. Lista dos programas instalados atualmente:
-```
+## Ubuntu:
+Lista dos programas instalados atualmente:
+```shell
 dpkg --list
 ```
 
-
-2. Desinstalar Softwares no Ubuntu:
-```
+Desinstalar Softwares no Ubuntu:
+```shell
 sudo apt-get --purge remove nomedoprograma
 ```
 
-
-3. Lista os diretorios ocultos:
-```
+Lista os diretorios ocultos:
+```shell
 ls -a
 ```
 
-
-4. Interragi com os diretorios:
-```
+Interragi com os diretorios:
+```shell
 cd nomedodiretorio
 ```
 
-
-5. Criar um arquivo:
-```
+Criar um arquivo:
+```shell
 touch nomedoaquivo.txt
 ```
 
-6. Crie um diretorios:
-```
+Crie um diretorios:
+```shell
 mkdir nomedodiretorio
 ```
 
-7. Verifica atualizações de todos os pacotes de um sistema Linux:
-```
+Verifica atualizações de todos os pacotes de um sistema Linux:
+```shell
 sudo apt-get upgrade
 ```
 
-8. O comando pwd informa o diretório absoluto corrente:
-```
+O comando pwd informa o diretório absoluto corrente:
+```shell
 pwd
 ```
 
-9. Entra na pasta:
-```
+Entra na pasta:
+```shell
 nautilus nome_da_pasta
 ```
 
-10. Intalando atualizações dos seus apps:
-```
+Intalando atualizações dos seus apps:
+```shell
 sudo dpkg -i nome_do_arquivo.deb
 ```
 
-## GIT:
-
-1. Seguinte comando pode ser usado para definir o email:
-```
+## Git:
+Seguinte comando pode ser usado para definir o email:
+```shell
 git config --global user.email "samueloficial@protonmail.com"
 ```
 
-
-2. Seguinte comando pode ser usado para definir o Nome:
-```
+Seguinte comando pode ser usado para definir o Nome:
+```shell
 git config --global user.name "SamuelBarbosaDev"
 ```
 
-
-3. Clona o repositorio:
-```
+Clona o repositorio:
+```shell
 git clone https://github.com/SamuelBarbosaDev/My_Site.git
 ```
 
-
-4. Diz qual é o status do repositorio
-```
+Diz qual é o status do repositorio:
+```shell
 git status
 ```
 
-
-5. Adiciona o arquivo ao índice:
-```
+Adiciona o arquivo ao índice:
+```shell
 git add nomedoarquivo.extenção
 ```
 
-
-6. O comando git commit é usado para confirmar as alterações na cabeça:
-```
+O comando git commit é usado para confirmar as alterações na cabeça:
+```shell
 git commit –m “coloque sua mensagem aqui”
 ```
 
-
-7. Envia as alterações feitas para o ramo mestre do repositório remoto:
-```
+Envia as alterações feitas para o ramo mestre do repositório remoto:
+```shell
 git push
 ```
 
-
-9. nome configurado:
+Nome configurado:
 opções:
 --local
 --global
 --system
 
-```
+```shell
 git config --local user.name "SeuUserName"
 ```
 
-
-10. E-mail configurando:
+E-mail configurando:
 opções:
 --local
 --global
 --system
 
-```
+```shell
 git config --local user.email "samueloficial@protonmail.com"
 ```
 
-
-11. salva usuario e senha por 8 horas:
+Salva usuario e senha por 8 horas:
 opções:
 --local
 --global
 --system
 
-```
+```shell
 git config --local credential.helper 'cache --timeout=28800'
 ```
 
-
-12. salva usuario e senha permanente:
+Salva usuario e senha permanente:
 opções:
 --local
 --global
 --system
 
-```
+```shell
 git config --local credential.helper cache
 ```
 
-13. echo "# Meu-Portfolio" >> README.md
-```
+echo "# Meu-Portfolio" >> README.md
+```shell
 git init
 ```
 
-```
+```shell
 git add README.md
 ```
 
-```
+```shell
 git commit -m "first commit"
 ```
 
-```
+```shell
 git branch -M main
 ```
 
-```
+```shell
 git remote add origin https://github.com/SamuelBarbosaDev/Meu-Portfolio.git
 ```
 
-```
+```shell
 git push -u origin main
 ```
-## Django:
 
-Criar Projeto.
-```
+## Django:
+Criar Projeto:
+```shell
 django-admin startproject nome_do_projeto
 ```
 
-Criar Aplicação.
-```
+Criar Aplicação:
+```shell
 python manage.py startapp nome_da_app
 ```
 
-Criar Migrações.
-```
+Criar Migrações:
+```shell
 python mananage.py makemigrations
 ```
 
-Executar Migrações.
-```
+Executar Migrações:
+```shell
 python manage.py migrate
 ```
 
-Executar Servidor de Desenvolvimento.
-```
+Executar Servidor de Desenvolvimento:
+```shell
 python manage.py runserver
 ```
 
-Limpar Banco de Dados.
-```
+Limpar Banco de Dados:
+```shell
 python manage.py flush
 ```
 
-Abrir Shell do Banco de Dados Configurado.
-```
+Abrir Shell do Banco de Dados Configurado:
+```shell
 python manage.py dbshell
 ```
 
-Mapear BD existente para o projeto Django.
-```
+Mapear BD existente para o projeto Django:
+```shell
 python manage.py inspectdb > nome_da_app.models.py
 ```
 ## Python:
-
-Criando ambiente virtual
-```
+Criando ambiente virtual:
+```shell
 python3 -m venv venv
 ```
 
 Ativando ambiente virtual:
-```
+```shell
 source venv/bin/activate
 ```
 
-adicionando todas as Libs ao arquivo requeriments.txt:
-```
+Adicionando todas as Libs ao arquivo requeriments.txt:
+```shell
 pip freeze > requirements.txt
 ```
 
-adiciona libs especificas ao arquivo requeriments.txt:
-```
+Adiciona libs especificas ao arquivo requeriments.txt:
+```shell
 pip freeze | grep jwt >> requirements.txt 
 ```
 
 Atualizando um pacote:
-```
+```shell
 pip install --upgrade <package-name>
 ```
 
 Removendo Varios pacotes:
-```
+```shell
 pip uninstall -r requirementstmp.txt -y
 ```
 
 ## PostgreSQL:
-
 Como acessar o prompt de comando do PostgreSQL:
-```
+```shell
 sudo -u postgres psql postgres
 ```
 
 Para sair do prompt de comando do PostgreSQL:
-```
+```shell
 \q 
 ```
 
 Como encontrar as informações sobre o banco de dados:
-```
+```shell
 select version();
 ```
 
 Lista dos bancos de dados no cluster:
-```
+```shell
 \l+
 ```
 
 Lista de usuários no cluster:
-```
+```shell
 \du+
 ```
 
 Lista de tablespaces customizados no cluster:
-```
+```shell
 \db+
 ```
 
 Criar usuario:
-```
+```shell
 sudo -u postgres createuser -d -P samuelbarbosa_dev
 ```
 
 Mais informações sobre o createuser do PostgreSQL:
-```
+```shell
 createuser --help
 ```
 
 Criando um banco de dados:
-```
+```shell
 sudo -u postgres createdb -O nomedousuario nomedobancodedados
 ```
 
 Excluí o banco de dados:
-```
+```shell
 DROP DATABASE databasename; 
 ```
 
 Excluí o usuário:
-```
+```shell
 DROP USER nomedousuario;
 ```
 
 Conectando ao banco de dados:
-```
+```shell
 \connect nomedobancodedados
 ```
 
+## Docker:
+Verificarmos informações do Docker Host:
+```shell
+docker info
+```
+
+Verificando a versão do cliente:
+```shell
+docker version
+```
+
+Listarmos as imagens:
+```shell
+docker images
+```
+
+Procurando uma imagem:
+```shell
+docker search postgres
+```
+
+Baixando imagem:
+```shell
+docker pull postgres
+```
+
+Criando um container:
+```shell
+docker run container_nome
+```
+
+Para o container:
+```shell
+docker stop container_nome
+```
+
+Lista os containers:
+```shell
+docker ps 
+```
+
+Lista todos os containers:
+```shell
+docker ps -a
+```
+
+Informações sobre um container:
+```shell
+docker stats container_nome
+```
+
+Detalhes da imagem:
+```shell
+docker inspect postgres
+```
+
+Deletar a imagem:
+```shell
+docker rmi postgres
+```
+
+Executar qualquer comando no containers sem precisar estar na console:
+```shell
+docker exec container_nome
+```
+
+Criando imagem personalizada:
+```shell
+docker build -t NOME_DA_IMAGEM CAMINHO_DO_DOCKERFILE
+```
+
 ## Docker Compose:
-
-Iniciando o Docker:
-```
-sudo docker-compose up
-```
-
-Iniciando o Docker em segundo plano:
-```
-sudo docker-compose up -d
+Cria e inicia os contêineres:
+```shell
+docker-compose up
 ```
 
-Parando o Docker:
-```
-sudo docker stop o_nome_do_docker
+Cria e inicia os contêineres em segundo plano:
+```shell
+docker-compose up -d
 ```
 
-Verificando os Docker ativos: 
+Remove todos os contêineres:
+```shell
+docker-compose down
 ```
-sudo docker ps
+
+Lista os contêineres em execução:
+```shell
+docker-compose ps
+```
+
+Exibe os logs dos contêineres:
+```shell
+docker-compose logs
+```
+
+Executa um comando dentro de um contêiner específico definido no arquivo `docker-compose.yml`:
+```shell
+docker-compose exec meu-servico bash
+```
+
+Reconstrói as imagens dos contêineres a partir do Dockerfile:
+```shell
+docker-compose build
+```
+
+Atualiza as imagens dos contêineres a partir do registro (como Docker Hub):
+```shell
+docker-compose pull
+```
+
+Inicia os contêineres de acordo com um arquivo:
+```shell
+docker-compose -f /caminho/para/outro/docker-compose.yml up
 ```
